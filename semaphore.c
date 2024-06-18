@@ -94,7 +94,7 @@ int nextStep(int num)
 int process(int semnum)
 {
     const char* colors[] = {RED, GREEN, YELLOW, BLUE, MAGENTA};
-    int i = semnum;
+    int i = semnum + 1;
     while (i < 101)
     {
         acquireSemaphore(semnum);
